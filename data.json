@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "project_name": "Random Quote Generator",
+            "description": "",
+            "technologies": ["JS", "CSS", "HTML" ],
+            "live_link": "",
+            "github_link": "",
+            "image_urls": []
+        },
+        {
+            "id": "1",
+            "project_name": "",
+            "description": "",
+            "technologies": [],
+            "live_link": "",
+            "github_link": "",
+            "image_urls": []
+        },
+        {
+            "id": "2",
+            "project_name": "",
+            "description": "",
+            "technologies": [],
+            "live_link": "",
+            "github_link": "",
+            "image_urls": []
+        },
+        {
+            "id": "3",
+            "project_name": "",
+            "description": "",
+            "technologies": [],
+            "live_link": "",
+            "github_link": "",
+            "image_urls": []
+        }
+    ]
+}
