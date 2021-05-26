@@ -22,7 +22,7 @@ app.get('/about', (req, res) => {
 //404 errors
 
 app.use((req, res, next) => {
-    console.log("fish lips");
+    console.log("app.js 404");
     const err = new Error();
     err.status = 404;
     next(err);
@@ -38,13 +38,12 @@ app.use((err, req, res, next) => {
         res.status(404).render('four', {err});
     } else {
         console.log('500 now boi');
-        err.message = 'It\'s all gone tits up';
         res.status(err.status || 500).render('error', {err});
     }
 });
 
 // Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.
 
-app.listen(process.env.PORT ||3000, () => {
+app.listen(3000, () => {
     console.log('This app is running on localhost: 3000!');
 });

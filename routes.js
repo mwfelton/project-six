@@ -6,7 +6,7 @@ const {projects} = require('./data/data.json');
 //home page route
 
 router.get('/', (req, res) => {
-    res.render('index', {projects})
+    res.render('index', { projects });
 });
 
 // router.get('/about', (req, res) => {
@@ -24,17 +24,17 @@ router.get('/error', (req, res, next) => {
 
 //Dynamic route to projects based on ID
 
-router.get('/projects/:id', (reg, res, next) => {
+router.get('/projects/:id', (req, res, next) => {
     const projectId = req.params.id;
-    const project = projects.find(({id}) => id === +projectId)
-    if(project){
-        res.render('project', {project});
-    } else {
-        const err = new Error();
-        err.status = 404;
-        err.message = 'The project you\'re looking for doesn\'t exist yet!';
-        next(err);
-    }
+    const project = projects.find( ({id}) => id === +projectId);
+    // if (project) {
+        res.render('project', { projects });
+    // } else {
+    //     const err = new Error();
+    //     err.status = 404;
+    //     err.message = 'The project you\'re looking for doesn\'t exist yet!';
+    //     next(err);
+    // }
 });
 
 module.exports = router;
