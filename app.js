@@ -1,7 +1,11 @@
 const express = require('express');
-const { data } = require('./data.json');
-
 const app = express();
+const routes = require('./routes');
+
+            //take 1 delete when done ^^^^^^^
+            // const index = require('./routes');
+            // const aboutMiles = require('./routes/about');
+            // const projects = require('./routes/projects');
 
 app.set('view engine', 'pug');
 
@@ -9,31 +13,38 @@ app.set('view engine', 'pug');
 
 app.use('/static', express.static('public'));
 
-// Set your routes. You'll need:
-
-// An "index" route (/) to render the "Home" page with the locals set to data.projects
-
-app.get('/', (req, res) => {
-    res.render('index.pug');
-});
-
-app.set("projects", "./data.projects")
-
-// An "about" route (/about) to render the "About" page
+app.use('/', routes);
 
 app.get('/about', (req, res) => {
     res.render('about');
 });
 
-// Dynamic "project" routes (/project/:id or /projects/:id) based on the id of the project that render a customized version of the Pug project template to show off each project. Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
+//404 errors
 
-app.get('/projects/:id', (req, res) => {
-    const { id } = req.params;
-    res.render
+app.use((req, res, next) => {
+    console.log("fish lips");
+    const err = new Error();
+    err.status = 404;
+    next(err);
+});
+
+//Global errors
+
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    if (err.status === 404) {
+        console.log('fish lip 404');
+        err.message = 'Page not found'
+        res.status(404).render('four', {err});
+    } else {
+        console.log('500 now boi');
+        err.message = 'It\'s all gone tits up';
+        res.status(err.status || 500).render('error', {err});
+    }
 });
 
 // Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.
 
-app.listen(3000, () => {
-    console.log('app is running on localhost:3000')
+app.listen(process.env.PORT ||3000, () => {
+    console.log('This app is running on localhost: 3000!');
 });

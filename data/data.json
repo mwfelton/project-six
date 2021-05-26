@@ -1,0 +1,42 @@
+{
+    "data": {
+        "projects": [
+            {
+                "id": "0",
+                "project_name": "Random Quote Generator",
+                "description": "A simple app to drop pearls of wisdom into everyone's day",
+                "technologies": ["JS", "CSS", "HTML"],
+                "live_link": "",
+                "github_link": "https://github.com/mwfelton/A-Random-Quote-Generator-p1",
+                "image_urls": {
+                    "main" : "images/random-quotes.png",
+                    "mainalt": "quotes generator main image"
+                }
+            },
+            {
+                "id": "1",
+                "project_name": "Data Pagination and Filtering",
+                "description": "A practice project to handle and display data",
+                "technologies": ["JS", "CSS", "HTML"],
+                "live_link": "",
+                "github_link": "https://github.com/mwfelton/pagination-filtering-treehouse-p2",
+                "image_urls": {
+                    "main" : "images/pagination-filtering.png",
+                    "mainalt": "data pagination project main image"
+                }
+            },
+            {
+                "id": "2",
+                "project_name": "Interactive Form",
+                "description": "A form to collect information from users and test the validation of inputs.",
+                "technologies": ["JS", "CSS", "HTML"],
+                "live_link": "",
+                "github_link": "https://github.com/mwfelton/forms-validation-p3.git",
+                "image_urls": {
+                    "main" : "images/form-validation.png",
+                    "mainalt": "Form project main image"
+                }
+            }
+        ]
+    }
+}
