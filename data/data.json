@@ -6,11 +6,13 @@
             "project_name": "Random Quote Generator",
             "description": "A simple app to drop pearls of wisdom into everyone's day",
             "technologies": ["JS", "CSS", "HTML"],
-            "live_link": "",
+            "live_link": "https://mwfelton.github.io/random-quote-generator-p1/",
             "github_link": "https://github.com/mwfelton/A-Random-Quote-Generator-p1",
             "image_urls": {
                 "main" : "/static/images/random-quotes.png",
-                "mainalt": "quotes generator main image"
+                "mainalt": "quotes generator main image",
+                "add_img": "/static/images/random-quotes-add.png",
+                "add_alt": "1200 by 550 main page image Project 1"
             }
         },
         {
@@ -18,11 +20,17 @@
             "project_name": "Data Pagination and Filtering",
             "description": "A practice project to handle and display data",
             "technologies": ["JS", "CSS", "HTML"],
-            "live_link": "",
+            "live_link": "https://mwfelton.github.io/pagination-filtering-p2/",
             "github_link": "https://github.com/mwfelton/pagination-filtering-treehouse-p2",
             "image_urls": {
                 "main" : "/static/images/pagination-filtering.png",
-                "mainalt": "data pagination project main image"
+                "mainalt": "data pagination project main image",
+                "add_img": "/static/images/page-filter-add-3.png",
+                "add_alt": "1200 by 550 main page image Project 2",
+                "add_img1": "/static/images/page-filter-add-2.png",
+                "add_alt1": "project 2 pagination",
+                "add_img2": "/static/images/page-filter-add-1.png",
+                "add_alt2": "project 2 search bar"
             }
         },
         {
@@ -30,11 +38,17 @@
             "project_name": "Interactive Form",
             "description": "A form to collect information from users and test the validation of inputs.",
             "technologies": ["JS", "CSS", "HTML"],
-            "live_link": "",
+            "live_link": "https://mwfelton.github.io/forms-validation-p3/",
             "github_link": "https://github.com/mwfelton/forms-validation-p3.git",
             "image_urls": {
                 "main" : "/static/images/form-validation.png",
-                "mainalt": "Form project main image"
+                "mainalt": "Form project main image",
+                "add_img": "/static/images/form-add-1.jpg",
+                "add_alt": "1200 by 550 main page image Project 3",
+                "add_img1": "/static/images/form-add-2.jpg",
+                "add_alt1": "project 3 workshop selection fields",
+                "add_img2": "/static/images/form-add-3.jpg",
+                "add_alt2": "project 3 payment form validation"
             }
         }
     ]

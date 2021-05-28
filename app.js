@@ -15,10 +15,6 @@ app.use('/static', express.static('public'));
 
 app.use('/', routes);
 
-app.get('/about', (req, res) => {
-    res.render('about');
-});
-
 //404 errors
 
 app.use((req, res, next) => {
@@ -33,11 +29,11 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     res.locals.error = err;
     if (err.status === 404) {
-        console.log('fish lip 404');
+        console.log('404');
         err.message = 'Page not found'
-        res.status(404).render('four', {err});
+        res.status(404).render('page-not-found', {err});
     } else {
-        console.log('500 now boi');
+        console.log('500 error');
         res.status(err.status || 500).render('error', {err});
     }
 });
