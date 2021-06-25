@@ -50,6 +50,42 @@
                 "add_img2": "/static/images/form-add-3.jpg",
                 "add_alt2": "project 3 payment form validation"
             }
+        },
+        {
+            "id": "3",
+            "project_name": "OOP Game Show App",
+            "description": "A fun little phrase guessing project to practice and implement object oriented programing and working with classes.",
+            "technologies": ["JS", "CSS", "HTML"],
+            "live_link": "https://mwfelton.github.io/oop-gameshow-app-p4/",
+            "github_link": "https://github.com/mwfelton/oop-gameshow-app-p4",
+            "image_urls": {
+                "main" : "/static/images/p4-main.png",
+                "mainalt": "OOP gameshow main image",
+                "add_img": "/static/images/p4-winning-screen.png",
+                "add_alt": "1200 by 550 main page image Project 3",
+                "add_img1": "/static/images/p4-image-1.png",
+                "add_alt1": "project 3 workshop selection fields",
+                "add_img2": "/static/images/p4-loosing-screen.png",
+                "add_alt2": "project 3 payment form validation"
+            }
+        },
+        {
+            "id": "4",
+            "project_name": "Public API Request",
+            "description": "Using JavaScript to create an employee directory by communicating with a third-party API",
+            "technologies": ["JS", "CSS", "HTML"],
+            "live_link": "https://mwfelton.github.io/public-api-requests-p5/",
+            "github_link": "https://github.com/mwfelton/public-api-requests-p5",
+            "image_urls": {
+                "main" : "/static/images/p5-main.png",
+                "mainalt": "OOP gameshow main image",
+                "add_img": "/static/images/p5-image-1.png",
+                "add_alt": "1200 by 550 main page image Project 3",
+                "add_img1": "/static/images/p5-image-2.png",
+                "add_alt1": "project 3 workshop selection fields",
+                "add_img2": "/static/images/p5-image-3.png",
+                "add_alt2": "project 3 payment form validation"
+            }
         }
     ]
 }
